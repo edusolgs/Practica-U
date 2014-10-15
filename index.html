@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=320; user-scalable=no" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>SimpleNote</title>
+
+<!--<script src="http://debug.phonegap.com/target/target-script-min.js#raymondcamden"></script>-->
+<link rel="stylesheet" href="css/jquery.mobile-1.2.1.min.css" />
+<link rel="stylesheet" href="css/miapp/styles.css" />
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery.mobile-1.2.1.min.js"></script>
+    <script src="js/mijs.js"></script>
+     <script src="js/baseDatos.js"></script>
+     <script type="text/javascript" src="js/phonegap-1.1.0.js"></script>
+</head>
+
+<body>
+
+<!--PARTE PRINCIPAL REGION 1-->
+<div data-role="page" id="homePage">
+
+	<div data-role="header" >
+		<h1>APLICACION MOVIL</h1>
+        
+	</div>
+
+	<div data-role="content" id="mainContent">
+    <div class="center-wrapper">
+    <img src="imagenes/upse.png">	
+     <section data-role="content">
+		<ul data-role="listview" data-inset="true">
+			<li><a href="#categoria">AUTOS CATEGORIA</a></li>
+			<li><a href="#general">GENERACION AUTO</a></li>
+            <li><a href="#listadogeneral">INGRESAR MODELOS</a></li>
+		</ul>
+     </section>
+     </div>
+	</div>
+
+	<div data-role="footer" class="ui-bar" data-position="fixed">
+		App movil
+	</div>
+
+</div>
+
+
+<!--REGION 2-->
+<div data-role="page" id="categoria">
+
+	<div data-role="header" >
+       <a href="#" data-rel="back" data-theme="e" class="backButton">Atras</a> 
+		<h1>CATEGORIA AUTOS</h1>
+        
+	</div>
+
+	<div data-role="content" id="mainContent">	
+		<ul data-role="listview">
+            <li><a href="#pagina1" data-rel="dialog">Chevrolet Monza</a></li>
+            <li><a href="#pag2" data-rel="dialog">Chevrolet N300</a></li>
+            <li><a href="">Chevrolet Niva/VAZ-2123</a></li>
+            <li><a href="">Chevrolet Sedan</a></li>
+            <li><a href="">Chevrolet Cobalt</a></li>
+            <li><a href="">Chevrolet Sail</a></li>
+		</ul>
+	</div>
+
+	<div data-role="footer" class="ui-bar" data-position="fixed">
+		App movil
+	</div>
+
+</div>
+
+<!--REGION 3-->
+<div data-role="page" id="general">
+
+	<div data-role="header" >
+    <a href="#" data-rel="back" data-theme="e" class="backButton">Atras</a> 
+
+		<h1>SimpleNotes</h1>
+	</div>
+
+	<div data-role="content">	
+		<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+			
+            <div data-role="collapsible" data-collapsed="false" >
+				<h3>Section 1</h3>
+                <ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="e">
+                    <li data-role="list-divider">Acessos</li>
+                    <li><a data-role="button" data-icon="delete" id="boton1">Eliminar</a></li>
+                    <li><a onClick="prueb();" data-role="button" data-icon="arrow-l">Activar</a></li>
+                </ul>
+			</div>
+	
+			<div data-role="collapsible">
+				<h3>Section 2</h3>
+				<ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="e">
+                    <li data-role="list-divider">Acerca de:</li>
+                    <li><img src="imagenes/upse.png">
+                        <h3>APP MOVIL 1</h3>
+                        <p>Aplicación móvil</p>
+                    </li>
+                    <li><img src="imagenes/upse.png">
+                        <h3>APP MOVIL 2</h3>
+                        <p>Aplicación móvil</p>
+                    </li>
+                    <li><img src="imagenes/upse.png" />
+                        <h3>APP MOVIL 3:</h3>
+                        <p>Aplicación móvil3</p>
+                    </li>
+                    <li><img src="imagenes/upse.png" />
+                        <h3>APP MOVIL 4:</h3>
+                        <p>Aplicación móvil4</p>
+                    </li>	
+      
+				</ul>
+			</div>
+	
+		</div>
+
+	</div>
+</div>
+
+
+<!--REGION 1 dialog-->
+
+<div data-role="page" id="pagina1">
+  <div data-role="header">
+    <h1>Vehículo</h1>
+  </div>
+  <div data-role="content">
+    <p>
+    Descripcion del Vehiculo.
+    </p>
+  </div>
+</div>
+
+
+<!--REGION 2 dialog-->
+
+
+<div data-role="page" id="pag2">
+  <div data-role="header">
+    <h1>Vehículo</h1>
+  </div>
+  <div data-role="content">
+   <ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="e">
+		<li data-role="list-divider">Acerca de:</li>
+        <li><img src="imagenes/upse.png">
+        	<h3>APP MOVIL 1</h3>
+            <p>Aplicación móvil</p>
+        </li>
+  	</ul>
+  </div>
+</div>
+
+
+<!--REGION 3 dialog-->
+
+
+<div data-role="page" id="autogenera">
+  <div data-role="header">
+    <h1>Vehículo</h1>
+  </div>
+  <div data-role="content">
+   <ul data-role="listview" data-inset="true" data-theme="d" id="pag" data-divider-theme="e">
+		
+  	</ul>
+  </div>
+</div>
+
+
+
+
+<!-- /Genera Autos-->
+
+ <div data-role="page" id="generaAutos" >
+    
+    <div data-role="header" data-position="fixed"> 
+          <a href="#" data-rel="back" data-theme="b" class="backButton">Atras</a>                  
+                <h1>AUTOSsss</h1>
+                <a data-theme="c" class="ui-btn-right" onClick="window.location.href='index.html'">Inicio</a>
+     </div>
+    
+
+	<div data-role="content"><!-- Inicia el Contenido-->
+		<div class="center-wrapper">
+			<ul data-role="listview" data-inset="true" class="ui-listview-outer" id="lista" >
+                
+			</ul>
+		</div>	
+	</div>
+	 <div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+                    <ul>
+                        <li><a href="#infoUpse" class="menuSearch"  data-icon="custom" >Academia</a></li>
+						<li><a class="menuMap"  data-icon="custom" onClick=" window.location.href='index.html#newsPage'">Noticias</a></li>
+                     
+                        
+                    </ul>
+                </div>
+            </div>
+	
+	
+</div><!-- /page departamentos-->
+
+
+
+
+
+
+
+
+
+    <!-- Start of second page BASE DE DATOS -->
+    
+    
+    
+    <!--REGION 3 dialog-->
+
+
+<div data-role="page" id="base">
+  <div data-role="header">
+    <h1>Vehículo</h1>
+  </div>
+  <div data-role="content">
+  <ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="e">
+                    <li data-role="list-divider">Ingreso de Modelos de Auto</li>
+                    <li><a data-role="button" data-icon="delete" href="#listadogeneral">Ingresar</a></li>
+                    <li><a onClick="ver();" data-role="button" data-icon="arrow-l">Visualizar</a></li>
+  </ul>
+  </div>
+</div>
+    
+    
+    
+    
+<!-- Start of second page -->
+<div data-role="page" id="listadogeneral">
+
+	<div data-role="header">
+    <a href="#" data-rel="back" data-theme="b" class="backButton">Atras</a>
+		<h1>Modelos</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<h1>Datos Vehiculos</h1>
+        
+        
+<input id="txFirstName" type="text" placeholder="FirstName">
+<input id="txLastName" type="text" placeholder="Precio">
+<input type="button" value="Add Modelo" onClick="AddValueToDB()">
+<input type="button" value="Actualizar" onClick="ListDBValues()"> 
+<a href="#iniciar" data-role="button" data-icon="plus">Ver Lista</a><br>
+
+
+
+
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+<!-- Start of first page -->
+<div data-role="page" id="iniciar">
+
+	<div data-role="header" data-position="fixed">
+        <a href="#listadogeneral" data-rel="back" data-theme="b" class="backButton">Atras</a> 
+		<h1>Foo</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" id="mainContent1">	
+		<ul data-role="listview" id="notas"></ul>
+	</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+<!--REGION 3 dialog-->
+
+
+<div data-role="page" id="mesajito">
+  <div data-role="header">
+    <h1>Desea Eliminar</h1>
+    
+  </div>
+  <div data-role="content">
+   
+    <a href="" data-role="button" id="aceptar">Aceptar</a>
+    <a href="#" data-role="button">Cancelar</a>
+  </div>
+</div>
+
+</body>
+</html>

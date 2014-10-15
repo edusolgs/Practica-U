@@ -1,0 +1,167 @@
+
+.center-wrapper{
+	text-align:center;
+	font-size:25px;
+	color:green;
+}
+.ui-footer .ui-btn-inner {	
+    padding-top: 40px !important;
+}
+.ui-footer .ui-icon-custom.ui-icon {
+    width: 32px;
+    height: 32px;
+    margin-left: -16px;
+}
+
+.menuMap .ui-icon {
+    background: url("imagenes/menu/map_inactive.png") no-repeat scroll 0 0 transparent;
+    background-size: 32px 32px;
+}
+.menuMap.ui-btn-active .ui-icon {
+    background: url("imagenes/menu/map_active.png") no-repeat scroll 0 0 transparent;
+    background-size: 32px 32px;
+}
+
+.menuSearch .ui-icon {
+    background: url("imagenes/menu/star_inactive.png") no-repeat scroll 0 0 transparent;
+    background-size: 32px 32px;
+}
+.menuSearch.ui-btn-active .ui-icon {
+    background: url("imagenes/menu/star_active.png") no-repeat scroll 0 0 transparent;
+    background-size: 32px 32px;
+}
+
+
+
+
+
+/ * Restablece Responsive
+-------------------------------------------------- ------------ * /
+@-O-viewport  {
+  anchura :  dispositivo de ancho ;
+}
+@-Ms-viewport  {
+  anchura :  dispositivo de ancho ;
+}
+@ Viewport  {
+  anchura :  dispositivo de ancho ;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 1000px){
+img{
+width:180px;
+}
+
+}
+@media all and (max-width: 400px){
+img{
+width:100%;
+}
+
+}
+@media all and (max-width: 380px){
+img{
+width:80%;
+}
+
+}
+
+@media all and (max-width: 320px){
+img{
+width:80%;
+}
+
+}
+
+@media all and (max-width: 240px){
+img{
+width:60%;
+}
+
+
+
+}
+
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {	
+	html{ background:url('fondo_ipad_landscape.jpg') no-repeat center center; min-height:100%;}
+img{
+width:180px;
+}
+
+}
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	html{ background:url('fondo_ipad_portrait.jpg') no-repeat center center; min-height:100%;}
+	img{
+width:180px;
+}
+
+}
+ 
+ /* Nexus 4*/
+@media only screen 
+and (max-width : 380px) {
+	html{ background:url('fondo_smart_portrait.jpg') no-repeat center center; min-height:100%;}
+	img{
+width:180px;
+}
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+	html{ background:url('fondo_smart_portrait.jpg') no-repeat center center; min-height:100%;}
+	img{
+width:180px;
+}
+
+}
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (max-width : 480px) {
+	html{ background:url('fondo_smart_landscape.jpg') no-repeat center center; min-height:100%;}
+	img{
+width:180px;
+}
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 240px) {
+	html{ background:url('fondo_smart_portrait.jpg') no-repeat center center; min-height:100%;}
+	img{
+width:60px;
+}
+
+}
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 180px) {
+	html{ background:url('fondo_smart_portrait.jpg') no-repeat center center; min-height:100%;}
+	img{
+width:40px;
+}
+
+}
